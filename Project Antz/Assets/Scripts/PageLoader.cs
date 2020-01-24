@@ -1,36 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class PageLoader : MonoBehaviour
 {
-    [SerializeField]
-    List<GameObject> currentlyDisplayedGameObjects;
+    [SerializeField] private GameObject startingPage;
+    public static GameObject currentPage;
 
-    // Start is called before the first frame update
     void Start()
     {
-        foreach (GameObject gameObject in currentlyDisplayedGameObjects)
-        {
-            gameObject.SetActive(true);
-        }
+        currentPage = startingPage;
+        currentPage.SetActive(true);
     }
 
-    // Deactivate all GameObjects and remove them from the list
-    public void ResetActiveGameObjects()
+    public void SwitchToPage(GameObject pageToLoad)
     {
-        foreach(GameObject gameObject in currentlyDisplayedGameObjects)
-        {
-            gameObject.SetActive(false);
-        }
-        currentlyDisplayedGameObjects.Clear();
-    }
-
-    // Add a GameObject to the list and activate it
-    public void ActivateGameObject(GameObject gameObject)
-    {
-        currentlyDisplayedGameObjects.Add(gameObject);
-        gameObject.SetActive(true);
+        currentPage.SetActive(false);
+        pageToLoad.SetActive(true);
+        currentPage = pageToLoad;
     }
 }

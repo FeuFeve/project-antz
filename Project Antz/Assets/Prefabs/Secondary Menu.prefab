@@ -811,6 +811,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8591666449953459214}
     m_Modifications:
+    - target: {fileID: 7488362687455820928, guid: e189f9b439a9e4f4881c1332d8881dae,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488362687455820928, guid: e189f9b439a9e4f4881c1332d8881dae,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.3803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488362687455820928, guid: e189f9b439a9e4f4881c1332d8881dae,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488362687455820928, guid: e189f9b439a9e4f4881c1332d8881dae,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwitchToPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488362687455820928, guid: e189f9b439a9e4f4881c1332d8881dae,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488362687455820928, guid: e189f9b439a9e4f4881c1332d8881dae,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7488362687455820928, guid: e189f9b439a9e4f4881c1332d8881dae,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7488362687455820929, guid: e189f9b439a9e4f4881c1332d8881dae,
         type: 3}
       propertyPath: m_LocalPosition.x
