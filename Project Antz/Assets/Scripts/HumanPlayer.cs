@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class HumanPlayer : Player
 {
     public TextMeshProUGUI profile;
-    public TextMeshProUGUI profile2;
 
 
     // CONSTRUCTOR
@@ -27,6 +26,5 @@ public class HumanPlayer : Player
     {
         profile.text    = "ID : " + id + "\n"
                         + "Pseudo : " + pseudo;
-        profile2.text = profile.text;
     }
 }
