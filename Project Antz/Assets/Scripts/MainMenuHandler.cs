@@ -14,16 +14,18 @@ public class MainMenuHandler : MonoBehaviour, IPointerEnterHandler, IPointerExit
         inMainMenu = true;
         SecondaryMenuHandler.inSecondaryMenu = true;
         currentMainMenu.GetComponent<Button>().Select();
-        //currentMainMenu.SetActive(true);
         linkedSubMenu.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         inMainMenu = false;
-        if(!SecondaryMenuHandler.inSecondaryMenu)
+
+        RectTransform imgRectTransform = linkedSubMenu.GetComponent<RectTransform>();
+        Vector2 localMousePosition = imgRectTransform.InverseTransformPoint(Input.mousePosition);
+
+        if (!imgRectTransform.rect.Contains(localMousePosition))
         {
-            //currentMainMenu.SetActive(false);
             EventSystem.current.SetSelectedGameObject(null);
             linkedSubMenu.SetActive(false);
         }

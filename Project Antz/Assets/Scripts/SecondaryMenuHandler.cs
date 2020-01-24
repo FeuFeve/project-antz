@@ -14,7 +14,6 @@ public class SecondaryMenuHandler : MonoBehaviour, IPointerExitHandler
         inSecondaryMenu = false;
         if(!MainMenuHandler.inMainMenu)
         {
-            //linkedMainMenu.SetActive(false);
             EventSystem.current.SetSelectedGameObject(null);
             currentSecondaryMenu.SetActive(false);
         }
