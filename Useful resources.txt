@@ -1,0 +1,4 @@
+### Resize text containers and stack them vertically
+
+- https://www.youtube.com/watch?v=W4tUQr9Tv3g
+- https://forum.unity.com/threads/does-the-content-size-fitter-work.484678/
