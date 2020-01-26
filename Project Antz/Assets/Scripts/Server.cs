@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Server : MonoBehaviour
 {
-    public int serverMapSizeX = 100;
-    public int serverMapSizeY = 100;
+    public const int serverMapSizeX = 100;
+    public const int serverMapSizeY = 100;
 
     public Map map;
 
@@ -15,7 +15,7 @@ public class Server : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Laying.CalculateSecondsPerUnit(300, 7);
     }
 
     // Update is called once per frame
