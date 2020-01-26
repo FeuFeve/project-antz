@@ -44,3 +44,4 @@ Antzzz (EN) : http://www.antzzz.org/
 
 *Start date : 26/01/20*
 
+- Added 'Worker', 'Young dwarf' and 'Dwarf' units to the Queen page
