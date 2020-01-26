@@ -18,18 +18,22 @@ public class PageLoader : MonoBehaviour
             {
                 page.gameObject.SetActive(false);
             }
+            pageFolder.SetActive(false);
         }
 
         // Activate the Welcome Page if it's not already the case
         currentPage = startingPage;
         currentPage.SetActive(true);
+        currentPage.transform.parent.gameObject.SetActive(true);
     }
 
     // SWITCH FROM A PAGE TO ANOTHER
     public void SwitchToPage(GameObject pageToLoad)
     {
         currentPage.SetActive(false);
+        currentPage.transform.parent.gameObject.SetActive(false);
         pageToLoad.SetActive(true);
+        pageToLoad.transform.parent.gameObject.SetActive(true);
         currentPage = pageToLoad;
     }
 }
